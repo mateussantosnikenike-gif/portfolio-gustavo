@@ -316,6 +316,19 @@ b,strong{font-weight:700}
 }
 .pod:hover{transform:translateY(-8px)}
 .pod::before{content:"";position:absolute;inset:0 0 auto 0;height:4px}
+.pod::after{
+  content:"";
+  position:absolute;
+  inset:4px 0 0 0;
+  background:rgba(0,0,0,.55);
+  pointer-events:none;
+}
+
+.pod__place,
+.pod__body{
+  position:relative;
+  z-index:1;
+}
 .pod--gold::before{background:var(--yellow)}
 .pod--silver::before{background:linear-gradient(90deg,#cfd3d8,#8c9096)}
 .pod--gold:hover{border-color:rgba(255,209,0,.55);box-shadow:0 30px 70px -34px rgba(255,209,0,.55)}
