@@ -620,3 +620,9 @@ b,strong{font-weight:700}
   .hero{min-height:auto;padding:24px 0}
   .hero__bg img{filter:grayscale(1)}
 }
+.pod__place span {
+  font-family: var(--font-b);
+  font-size: 14px;
+  font-weight: 700;
+  vertical-align: middle;
+}
